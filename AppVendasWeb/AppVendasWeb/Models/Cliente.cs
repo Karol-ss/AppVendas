@@ -13,7 +13,7 @@ namespace AppVendasWeb.Models
         public string ClienteNome { get; set; }
 
         [Required(ErrorMessage = "O campo CPF é obrigatório")]
-        [StringLength(100, ErrorMessage = "O campo CPF deve ter no máximo 11 caracteres")]
+        [StringLength(14, ErrorMessage = "O campo CPF deve ter no máximo 11 caracteres")]
 
         public string CPF { get; set; }
 

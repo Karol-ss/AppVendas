@@ -7,8 +7,8 @@
 <h1 class="display-5 text-light my-5">Cadastro de clientes</h1>
 
 <p>
-    <a asp-action="Create" class="btn btn-lg btn-outline-light align-items-center">
-        <svg class="me-3" bootstrap-icon="PlusLg" width="16" height="16" aria-label="Adicionar"></svg>
+    <a asp-action="Create" class="btn btn-outline-light d-inline-flex align-items-center ">
+        <svg class="me-3" bootstrap-icon="PlusLg" width="14" height="14" aria-label="Adicionar"></svg>
         Adicionar
     </a>
 </p>
@@ -66,15 +66,9 @@
                         @Html.DisplayFor(modelItem => item.CadastroAtivo)
                     </td>
                     <td class="text-end">
-                        <a class="btn btn-outline-light" asp-action="Edit" asp-route-id="@item.ClienteId">
-                            Editar
-                        </a>
-                        <a class="btn btn-outline-light" asp-action="Details" asp-route-id="@item.ClienteId">
-                            Detalhes
-                        </a>
-                        <a class="btn btn-outline-light" asp-action="Delete" asp-route-id="@item.ClienteId">
-                            Deletar
-                        </a>
+                        <a asp-action="Edit" asp-route-id="@item.ClienteId" class="btn btn-outline-warning">Editar</a>
+                        <a asp-action="Details" asp-route-id="@item.ClienteId" class="btn btn-outline-info">Detalhes</a>
+                        <a asp-action="Delete" asp-route-id="@item.ClienteId" class="btn btn-outline-danger">Deletar</a>
                     </td>
                 </tr>
             }
