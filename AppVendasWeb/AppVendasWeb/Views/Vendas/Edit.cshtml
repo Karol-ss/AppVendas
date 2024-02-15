@@ -20,7 +20,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="ValorTotal" class="control-label"></label>
-                <input asp-for="ValorTotal" class="form-control" />
+                <input asp-for="ValorTotal" value="@DateTime.Now.ToString("yyyy-MM-dd HH:mm")" class="form-control" />
                 <span asp-validation-for="ValorTotal" class="text-danger"></span>
             </div>
             <div class="form-group">
